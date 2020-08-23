@@ -3,11 +3,12 @@
     display: flex;
     align-items: start;
     flex-direction: column;
-    width: 70%;
-    margin: 0 auto;
+    width: 60%;
+    margin: 10% auto;
 }
 
 .Head {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
 }

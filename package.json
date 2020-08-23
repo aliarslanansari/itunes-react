@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "antd": "^4.5.4",
+        "antd": "^4.6.0",
         "react": "^16.4.2",
         "react-audio-player": "^0.13.0",
         "react-dom": "^16.4.2",
