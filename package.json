@@ -1,0 +1,36 @@
+{
+    "name": "saga-splash",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "antd": "^4.5.4",
+        "react": "^16.4.2",
+        "react-audio-player": "^0.13.0",
+        "react-dom": "^16.4.2",
+        "react-h5-audio-player": "^3.3.2",
+        "react-redux": "^5.0.7",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "1.1.4",
+        "redux": "^4.0.0",
+        "redux-saga": "^0.16.0",
+        "styled-components": "^5.1.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.4",
+        "@babel/preset-env": "^7.11.0",
+        "@babel/preset-react": "^7.10.4",
+        "babel-loader": "^8.1.0",
+        "html-webpack-plugin": "^4.3.0",
+        "prettier": "^1.14.0",
+        "redux-devtools-extension": "^2.13.8",
+        "webpack": "^4.44.1",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0"
+    }
+}
