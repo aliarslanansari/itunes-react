@@ -22,6 +22,7 @@ function SongDetails({ match }) {
     const [item, setItem] = useState({});
     return (
         <div className="container">
+            <h1>{item.trackName}</h1>
             <div className="Head">
                 <Img src={item.artworkUrl100} alt={item.trackName} layout="vertical" />
                 <Descriptions title={item.trackName} bordered size="small">
