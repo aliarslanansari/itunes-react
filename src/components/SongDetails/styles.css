@@ -1,0 +1,13 @@
+.container {
+    position: relative;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Head {
+    display: flex;
+    flex-direction: row;
+}

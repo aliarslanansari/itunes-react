@@ -2,19 +2,10 @@ import AudioPlayer from 'react-h5-audio-player';
 import React from 'react';
 import 'react-h5-audio-player/lib/styles.css';
 import styled from 'styled-components';
-
 const APlayer = styled(AudioPlayer)`
-    max-width: 500px;
     margin: 0 auto;
 `;
-
 const Player = ({ src }) => (
-    <APlayer
-        showDownloadProgress
-        autoPlay={true}
-        src={src}
-        onPlay={e => console.log('onPlay')}
-        // other props here
-    />
+    <APlayer showDownloadProgress autoPlay={true} src={src} onPlay={e => console.log('onPlay')} />
 );
 export default Player;

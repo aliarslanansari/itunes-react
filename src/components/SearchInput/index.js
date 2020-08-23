@@ -14,10 +14,11 @@ const SearchBar = styled(Search)`
     padding: 0 10px;
 `;
 
-const SearchInput = ({ isLoading, setSearch, loadImages }) => (
+const SearchInput = ({ isLoading, setSearch, loadImages, search }) => (
     <SearchBar
         loading={isLoading}
         placeholder="Search a song!"
+        defaultValue={search}
         onSearch={value => {
             setSearch(value);
             loadImages();
@@ -26,8 +27,9 @@ const SearchInput = ({ isLoading, setSearch, loadImages }) => (
     />
 );
 
-const mapStateToProps = ({ isLoading, images, error, imageStats }) => ({
-    isLoading
+const mapStateToProps = ({ isLoading, search }) => ({
+    isLoading,
+    search
 });
 const mapDispatchToProps = dispatch => ({
     setSearch: value => dispatch(setSearch(value)),

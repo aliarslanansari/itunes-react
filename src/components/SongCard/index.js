@@ -8,7 +8,7 @@ const StyledCard = styled(Card)`
 `;
 const StyledImg = styled.img`
     height: 200px;
-    transition: transform 0.5s ease;
+    transition: transform 0.2s ease;
     width: 100%;
     &:hover {
         transform: scale(1.3);
