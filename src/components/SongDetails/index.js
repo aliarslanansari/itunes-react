@@ -6,7 +6,6 @@ import styled from 'styled-components';
 import './styles.css';
 const Img = styled.img`
     height: 250px;
-    margin-right: 10px;
     width: 100%;
 `;
 function SongDetails({ match }) {
@@ -24,7 +23,7 @@ function SongDetails({ match }) {
             {item.trackName ? (
                 <div>
                     <h1>{item.trackName}</h1>
-                    <Row style={{ width: '100%' }} gutter={[8, 8]}>
+                    <Row gutter={[8, 8]}>
                         <Col xs={24} sm={24} md={6} lg={6} xl={6}>
                             <Img src={item.artworkUrl100} alt={item.trackName} />
                         </Col>
