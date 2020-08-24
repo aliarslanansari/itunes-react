@@ -12,6 +12,7 @@ const SearchBar = styled(Search)`
     margin: 0.5em auto;
     justify-self: center;
     padding: 0 10px;
+    font-family: Arial;
 `;
 
 const SearchInput = ({ isLoading, setSearch, loadImages, search }) => (

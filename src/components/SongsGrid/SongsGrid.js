@@ -12,7 +12,7 @@ class SongsGrid extends Component {
         this.props.loadImages();
     }
     render() {
-        const { songs, error, isLoading, loadImages } = this.props;
+        const { songs, error } = this.props;
         return (
             <div style={{ padding: 10, textAlign: 'center' }}>
                 {error && <div className="error">{JSON.stringify(error)}</div>}

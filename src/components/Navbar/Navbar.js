@@ -3,6 +3,7 @@ import { Layout } from 'antd';
 import './styles.css';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import SearchInput from '../SearchInput';
 const { Header } = Layout;
 
 const Link = styled(NavLink)`
@@ -10,6 +11,7 @@ const Link = styled(NavLink)`
     &:hover {
         color: #cc3399;
     }
+    float: left;
 `;
 
 const Navbar = () => (
