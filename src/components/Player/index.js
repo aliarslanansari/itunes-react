@@ -6,6 +6,12 @@ const APlayer = styled(AudioPlayer)`
     margin: 0 auto;
 `;
 const Player = ({ src }) => (
-    <APlayer showDownloadProgress autoPlay={true} src={src} onPlay={e => console.log('onPlay')} />
+    <APlayer
+        showDownloadProgress
+        autoPlay={false}
+        autoPlayAfterSrcChange={false}
+        src={src}
+        onPlay={e => console.log('onPlay')}
+    />
 );
 export default Player;

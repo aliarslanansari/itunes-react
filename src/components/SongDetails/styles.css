@@ -1,14 +1,8 @@
 .container {
-    position: relative;
-    display: flex;
     align-items: start;
-    flex-direction: column;
-    width: 60%;
-    margin: 10% auto;
+    margin: 2% auto;
 }
 
 .Head {
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
 }
