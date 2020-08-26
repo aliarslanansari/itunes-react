@@ -11,6 +11,7 @@ const fetchSongs = async search => {
 };
 
 const fetchSong = async id => {
+    console.log('FROM API SINGLE SONG', id);
     const URL = `${proxy}http://itunes.apple.com/lookup?entity=song&id=${id}`;
     const response = await fetch(URL);
     const data = await response.json();

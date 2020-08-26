@@ -14,6 +14,7 @@ const setSearch = search => ({
     search
 });
 
+const loadSong = () => ({ type: SONG.LOAD });
 const setSongId = id => ({
     type: SONG.SAVE_ID,
     id
@@ -23,4 +24,4 @@ const setSong = song => ({
     song
 });
 
-export { loadSongs, setSongs, setError, setSearch, setSongId, setSong };
+export { loadSongs, setSongs, setError, setSearch, setSongId, setSong, loadSong };

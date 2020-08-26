@@ -8,8 +8,8 @@ export const getId = state => state.song_id;
 export function* handleSongLoad() {
     try {
         const id = yield select(getId);
-        const songs = yield call(fetchSong, id);
-        yield put(setSong(songs));
+        const song = yield call(fetchSong, id);
+        yield put(setSong(song));
     } catch (error) {
         //dispatch error saga
         yield put(setError(error.toString()));
