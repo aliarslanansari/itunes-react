@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './styles.css';
 import SearchInput from '../SearchInput';
-import { loadImages } from '../../actions';
+import { loadSongs } from '../../actions';
 import { Row, Col, Spin } from 'antd';
 import { Link } from 'react-router-dom';
 import SongCard from '../SongCard';
 
 class SongsGrid extends Component {
     componentDidMount() {
-        this.props.loadImages();
+        this.props.loadSongs();
     }
     render() {
         const { songs, error, isLoading } = this.props;
@@ -41,6 +41,6 @@ const mapStateToProps = ({ isLoading, songs, error, search }) => ({
     search
 });
 const mapDispatchToProps = dispatch => ({
-    loadImages: () => dispatch(loadImages())
+    loadSongs: () => dispatch(loadSongs())
 });
 export default connect(mapStateToProps, mapDispatchToProps)(SongsGrid);

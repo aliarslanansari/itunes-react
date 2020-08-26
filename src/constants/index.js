@@ -1,9 +1,14 @@
 const SONGS = {
     LOAD: 'SONGS_LOAD',
     LOAD_SUCCESS: 'SONGS_LOAD_SUCCESS',
-    LOAD_FAIL: 'SONGS_LOAD_FAIL',
+    LOAD_FAIL: 'SONGS_LOAD_FAIL'
 };
 const SEARCH = {
-    ADD: 'SEARCH_TERM',
+    ADD: 'SEARCH_TERM'
 };
-export { SONGS, SEARCH };
+const SONG = {
+    LOAD: 'LOAD_SONG',
+    SAVE_ID: 'SAVE_SONG_ID',
+    LOAD_SUCCESS: 'SONG_LOAD_SUCCESS'
+};
+export { SONGS, SEARCH, SONG };

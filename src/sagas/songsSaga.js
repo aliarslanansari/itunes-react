@@ -3,11 +3,11 @@ import { SONGS } from '../constants';
 import { fetchSongs } from '../api/';
 import { setSongs, setError } from '../actions';
 
-export const getPage = state => state.search;
+export const getTerm = state => state.search;
 
 export function* handleSongsLoad() {
     try {
-        const search = yield select(getPage);
+        const search = yield select(getTerm);
         const songs = yield call(fetchSongs, search);
         yield put(setSongs(songs));
     } catch (error) {

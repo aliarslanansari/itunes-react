@@ -1,5 +1,5 @@
 import { Input } from 'antd';
-import { setSearch, loadImages } from '../../actions';
+import { setSearch, loadSongs } from '../../actions';
 import { connect } from 'react-redux';
 import React from 'react';
 import styled from 'styled-components';
@@ -15,14 +15,14 @@ const SearchBar = styled(Search)`
     font-family: Arial;
 `;
 
-const SearchInput = ({ isLoading, setSearch, loadImages, search }) => (
+const SearchInput = ({ isLoading, setSearch, loadSongs, search }) => (
     <SearchBar
         loading={isLoading}
         placeholder="Search a song!"
         defaultValue={search}
         onSearch={value => {
             setSearch(value);
-            loadImages();
+            loadSongs();
         }}
         enterButton
     />
@@ -34,6 +34,6 @@ const mapStateToProps = ({ isLoading, search }) => ({
 });
 const mapDispatchToProps = dispatch => ({
     setSearch: value => dispatch(setSearch(value)),
-    loadImages: () => dispatch(loadImages())
+    loadSongs: () => dispatch(loadSongs())
 });
 export default connect(mapStateToProps, mapDispatchToProps)(SearchInput);

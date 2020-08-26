@@ -3,7 +3,6 @@ import { Layout } from 'antd';
 import './styles.css';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import SearchInput from '../SearchInput';
 const { Header } = Layout;
 
 const Link = styled(NavLink)`

@@ -29,10 +29,13 @@ function SongDetails({ match }) {
                         </Col>
                         <Col xs={24} sm={24} md={18} lg={18} xl={18}>
                             <Descriptions bordered size="small">
-                                <Descriptions.Item label="Song Name">{item.trackName}</Descriptions.Item>
-                                <Descriptions.Item label="Album">{item.collectionName}</Descriptions.Item>
+                                <Descriptions.Item column="4" label="Song Name">
+                                    {item.trackName}
+                                </Descriptions.Item>
+                                <Descriptions.Item span={3} label="Album">
+                                    {item.collectionName}
+                                </Descriptions.Item>
                                 <Descriptions.Item label="Artist Name">{item.artistName}</Descriptions.Item>
-                                <Descriptions.Item label="Release Date">{item.releaseDate}</Descriptions.Item>
                                 <Descriptions.Item label="Release Date">{item.releaseDate}</Descriptions.Item>
                             </Descriptions>
                         </Col>
