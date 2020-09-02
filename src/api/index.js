@@ -4,7 +4,7 @@ const api = create({ baseURL: `${proxy}https://itunes.apple.com` });
 const URL = 'https://itunes.apple.com/search?';
 const fetchSongs = async search => {
     search = search.replace(' ', '-');
-    const response = await fetch(`${proxy}${URL}term=${search}&limit=48`);
+    const response = await fetch(`${proxy}${URL}term=${search}`);
     const data = await response.json();
     if (response.status >= 400) {
         throw new Error(response.error);
