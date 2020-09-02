@@ -2,7 +2,6 @@ import { create } from 'apisauce';
 const proxy = 'https://cors-anywhere.herokuapp.com/';
 const api = create({ baseURL: `${proxy}https://itunes.apple.com` });
 const URL = 'https://itunes.apple.com/search?';
-
 const fetchSongs = async search => {
     search = search.replace(' ', '-');
     const response = await fetch(`${proxy}${URL}term=${search}&limit=48`);
