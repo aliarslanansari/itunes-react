@@ -24,6 +24,7 @@ const fetchSong = async id => {
 };
 export { fetchSongs, fetchSong };
 
+//Need to be implemented
 const { ITUNES_URL } = process.env;
 
 const apiClients = {
@@ -33,7 +34,7 @@ const apiClients = {
 
 export const getApiClient = (type = 'itunes') => apiClients[type];
 
-export const generateApiClient = (type = 'github') => {
+export const generateApiClient = (type = 'itunes') => {
     switch (type) {
         case 'itunes':
             apiClients[type] = createApiClientWithTransForm(ITUNES_URL);
